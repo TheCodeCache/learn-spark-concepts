@@ -64,8 +64,15 @@ and has detailed knowledge of computation of we like to perform which helps it t
 ![image](https://user-images.githubusercontent.com/26399543/143828874-3f15f0b1-36a0-4a5e-8107-f8e9c5935675.png)
 
 
+It offers the 3 following optimization features:  
+
+1. Off-Heap Memory Management
+2. Cache Locality
+3. Whole-Stage Code Generation
 
 **Reference:**  
 1. https://spoddutur.github.io/spark-notes/deep_dive_into_storage_formats.html
 2. https://medium.com/@goyalsaurabh66/project-tungsten-and-catalyst-sql-optimizer-9d3c83806b63
+3. https://jaceklaskowski.gitbooks.io/mastering-spark-sql/content/spark-sql-tungsten.html
+
 
