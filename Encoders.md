@@ -1,4 +1,4 @@
-# ToDO
+# ToDo
 
 # Encoders:
 Central to the concept of `Dataset` is an `Encoder framework`,  
@@ -19,5 +19,4 @@ There are the 3 broad benefits provided by Encoders empowering Datasets to their
 
 **Reference:**  
 1. https://towardsdatascience.com/apache-spark-dataset-encoders-demystified-4a3026900d63
-
 
