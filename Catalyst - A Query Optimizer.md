@@ -4,8 +4,8 @@ The final phase:
 **Code Generation:**  
 Catalyst relies on a special feature of the Scala language, quasiquotes, to make code generation simpler.  
 `Quasiquotes allow the programmatic construction of abstract syntax trees (ASTs) in the Scala language,`  
-which can then be fed to the Scala compiler at runtime to generate bytecode.  
-We use Catalyst to transform a `tree` representing an expression in SQL to an `AST` for Scala code to evaluate that expression,  
+`which can then be fed to the Scala compiler at runtime to generate bytecode.`  
+We use `Catalyst` to transform a `tree` representing an expression in SQL to an `AST` for Scala code to evaluate that expression,  
 and then `compile` and `run` the generated code.  
 
 As a simple example, consider the Add, Attribute and Literal tree nodes,  
