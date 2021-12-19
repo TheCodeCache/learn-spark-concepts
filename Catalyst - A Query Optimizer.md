@@ -11,4 +11,5 @@ and then `compile` and `run` the generated code.
 **Reference:**  
 1. https://blog.bi-geek.com/en/spark-sql-optimizador-catalyst/
 2. https://people.csail.mit.edu/matei/papers/2015/sigmod_spark_sql.pdf
+3. https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.308.4668&rep=rep1&type=pdf
 
