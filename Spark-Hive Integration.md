@@ -1,4 +1,5 @@
-# TODO
+# Spark Hive Integration – 
+
 1. Ensure the Hadoop Cluster is up and running,  
 2. Place hive-site.xml under spark's conf folder  
 
