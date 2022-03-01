@@ -1,6 +1,4 @@
-# ToDo
-
-# Encoders:
+# Encoders – 
 Central to the concept of `Dataset` is an `Encoder framework`,  
 that provides Dataset with `storage` and `execution` efficiency gains as compared to `RDDs`.  
 
