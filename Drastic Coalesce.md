@@ -10,17 +10,17 @@ Spark offers two transformations to resize(increase/decrease) the RDD/DF/DS
 In case of partition increase, coalesce behavior is same as repartition  
 but in case of patition decrease, `coalesce optimized data shuffle by merging local partitions ie. within executor`  
 
-We've 3 tyes of coalesce as follows:  
+We've 2 types of coalesce as follows:  
 1. coalesce
 2. **drastic coalesce**
 
 sample example:  
 
 `dataframe.coalesce(n)`, where `n` is # of partitions.  
-`if `n < # of partitions `then drastic coalesce takes place which leads to data shuffle, o'wise shuffle does'nt take place`  
+`if `n < # of partitions `then drastic coalesce takes place which leads to data shuffle, o'wise shuffle doesn't take place`  
 
 best practice:  
-if we've imbalanced size of partitions, it's better to re-distribute then usinf different partitioning logic  
+if we've imbalanced size of partitions, it's better to re-distribute then using different partitioning logic  
 
 **Reference:**  
 1. https://stackoverflow.com/a/67915928/6842300
