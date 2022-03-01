@@ -17,20 +17,11 @@ We've 2 types of coalesce as follows:
 sample example:  
 
 `dataframe.coalesce(n)`, where `n` is # of partitions.  
-`if `n < # of partitions `then drastic coalesce takes place which leads to data shuffle, o'wise shuffle doesn't take place`  
+`if `n < # of data-nodes `then drastic coalesce takes place which leads to data shuffle, o'wise shuffle doesn't take place`  
 
-if we go from 1000 partitions to 100 partitions,  
-there will not be a shuffle, instead each of the 100 new partitions will  
-claim 10 of the current partitions. If a larger number of partitions is requested,  
-it will stay at the current number of partitions.  
+![image](https://user-images.githubusercontent.com/26399543/156186112-4d6bf382-97f1-425f-a2a5-10024bff0dca.png)  
 
-However, if we're doing a drastic coalesce, e.g. to numPartitions = 1,  
-this may result in your computation taking place on fewer nodes than we like  
-(e.g. one node in the case of numPartitions = 1). 
-To avoid this, we can call repartition(). 
-This will add a shuffle step, but means the current upstream partitions will be executed in parallel  
-
-best practice:  
+**Best Practice:**  
 if we've imbalanced size of partitions, it's better to re-distribute then using different partitioning logic  
 
 **Reference:**  
