@@ -1,4 +1,8 @@
-# TODO
+# Catalyst Optimizer - 
+
+This link has good content -  
+
+https://www.unraveldata.com/resources/catalyst-analyst-a-deep-dive-into-sparks-optimizer/  
 
 The final phase:  
 **Code Generation:**  
