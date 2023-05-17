@@ -6,7 +6,7 @@
 3. UDFs written in Python are slow compared to writing them in Scala
 4. Error messages from Spark (including PySpark) are in Java/Scala,  
   so they are hard for Python developers to understand  
-5. PySpark code is converted into Java Objects to run on Excetor process,  
+5. PySpark code is converted into Java Objects to run on Executor process,  
   this conversion happens through Py4J channel  
 6. Python, by nature, itself is a slow language compare to Scala/Java,  
   It is still popular because of its faster libraries like NumPy/Pandas etc.  
