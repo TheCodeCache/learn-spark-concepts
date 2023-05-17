@@ -7,7 +7,7 @@ Spark offers two transformations to resize(increase/decrease) the RDD/DF/DS
 `repartition` results in shuffle, can be used to increase/decrease the partitions  
 `coalesce` may or may not result in shuffle, directly depends on the # of partitions  
 
-In case of partition increase, coalesce behavior is same as repartition  
+In case of partition increase, it stays at the current # of partitions, as if nothing happens  
 but in case of patition decrease, `coalesce optimized data shuffle by merging local partitions ie. within executor`  
 
 We've 2 types of coalesce as follows:  
